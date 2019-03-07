@@ -1,0 +1,372 @@
+@font-face {
+  font-family: 'robotobold';
+  src: url('fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*______________________RESET______________________*/
+
+/*______________________RESET______________________*/
+
+/*______________________RESET______________________*/
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*______________________MY CODE______________________*/
+
+/*______________________MY CODE______________________*/
+
+/*______________________MY CODE______________________*/
+
+/*MAIN*/
+
+* {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #b7c8eb;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #d5dbe8;
+}
+
+/*HEADER*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b7c8eb;
+  width: 100%;
+  height: 68px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: "Times New Roman";
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  margin: 21px 24px;
+  float: left;
+  display: block;
+  color: white;
+}
+
+nav {
+  /* float: right; */
+  padding-right: 12px;
+  z-index: 100;
+}
+
+.information {
+  font-family: robotobold, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2.2px;
+  display: inline-block;
+  margin: 4px 0;
+  padding: 15px;
+  color: white;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: #b7c8eb url(../img/menu-icon.png) center;
+}
+
+/*a:hover#menu-icon {
+			background-color: black;
+			border-radius: 20px 20px 0 0;
+			}*/
+
+/*GALLERY*/
+
+.p {
+  margin: 80px 7% 50px;
+  font-family: robotobold;
+  font-size: 15px;
+  letter-spacing: 2.1px;
+  display: inline-block;
+  padding: 17px;
+  color: white;
+  line-height: 160%;
+}
+
+.p2 {
+  margin: 0px 7%;
+  font-family: robotobold;
+  font-size: 15px;
+  letter-spacing: 2.1px;
+  display: inline-block;
+  color: white;
+  line-height: 200%;
+  padding: 17px;
+}
+
+/*section {
+		margin: 0px auto;
+		max-width: 900px;
+		position: relative;
+		padding: 22px;
+
+	}*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: transparent;
+  /*color: #fff;*/
+  text-align: center;
+  /*padding: 5px 0;*/
+  /* Position the tooltip */
+  position: absolute;
+  left: 160%;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 1040px) {
+  .p {
+    margin: 80px 7% 60px;
+  }
+  .p2 {
+    margin: 0px 7%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    position: absolute;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .p {
+    width: 80%;
+    margin: 80px 7% 60px;
+  }
+  .p2 {
+    width: 80%;
+    margin: 0px 7%;
+  }
+  /*nav:hover ul {
+  
+      display: block;*/
+}
